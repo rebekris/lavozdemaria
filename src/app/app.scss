@@ -1,0 +1,37 @@
+h1, h3, h4{ 
+    color:#991B1A;
+     }    
+
+.tabbar {
+    background-image: url(../assets/imgs/bg-tabs.jpg) !important;
+    background-repeat: repeat-x !important; 
+    background-position: center bottom !important;
+    background-size: contain !important;
+    }
+
+.tabs-md .tab-button {
+    color: white !important;
+    font-family: 'Roboto'!important;
+    font-size: 8px !important;
+    }
+
+.ion-ios-paper-outline:before{
+    color: white;
+    }
+
+.ion-ios-calendar-outline:before{
+    color: white;
+    }
+
+.ion-ios-heart-outline:before{
+    color: white;
+    }
+
+.ion-ios-navigate-outline:before{
+    color: white;
+    }
+
+.tabs-md .tab-button[aria-selected=true] {
+    color: #D08E00;
+    padding: 0;
+}

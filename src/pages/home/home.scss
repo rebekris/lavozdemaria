@@ -1,0 +1,54 @@
+page-home {
+
+ .radio {
+     background-color: #E9E8E7;
+     position: relative;
+     width: 80%;
+     left: 10%;
+     bottom: 12px;
+     border-style:solid;
+     border-width: thin;
+     border-color: #D08E00;
+     
+     }
+
+    .container-vermas{
+     background-color: transparent;
+     position: relative;
+     width: 40%;
+     left: 30%;
+     bottom: 12px;
+     border-style:solid;
+     padding: 8px;
+     border-width: thin;
+     border-color: #D08E00;
+     color: #D08E00;
+
+     
+     }
+    
+    
+   .icon-vermas {
+     margin-left: 55px;
+       
+       
+     }
+    
+    
+     .container-vermas a {
+     color: #D08E00;
+     text-decoration: none;
+     margin-left: 35px;
+     }
+    
+    
+    .tabs-md .tab-button {
+    color: white !important;
+    }
+    
+    .button-clear-md {
+    color: #D08E00 !important;
+    }
+  
+     
+}

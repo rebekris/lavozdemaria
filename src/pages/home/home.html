@@ -1,0 +1,130 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Radio La Voz de María </ion-title>
+       <link href="home.scss">
+        <link href="home.ts">
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <img src="../../assets/imgs/home.png">
+ 
+    <div class="radio"> <table cellpadding="2" cellspacing="0" border="0" align="center" style="padding-left:1em;"><tr><td align="center"><audio id="audio_2" controls preload="none" style="width:16em;padding:0;"><source src="http://72.52.144.7:8011/stream/2/;?type=http&amp;nocache=5" type='audio/mpeg'></audio></td></tr></table><script type="text/javascript">
+
+    function $(id){return document.getElementById(id);}
+    var registerOnWindowLoad=function(callback){
+
+    if(window.addEventListener){
+        window.addEventListener('load',callback,false);
+
+    }else{
+
+    window.attachEvent('onload',callback);
+
+    }
+
+    };
+
+    registerOnWindowLoad(function(){
+
+    if(navigator.userAgent.match(/msie|trident/i)){
+
+    $('hdrbox').style.display = 'block';
+
+    }
+
+    });
+
+    </script><script type="text/javascript">
+
+    var registerOnWindowLoad=function(callback){
+
+    if(window.addEventListener){
+
+    window.addEventListener('load',callback,false);
+
+    }else{
+
+    window.attachEvent('onload',callback);
+
+    }
+
+    };
+
+    registerOnWindowLoad(function(){
+
+    var audio=document.getElementsByTagName("audio");
+
+    if(audio.length){
+
+    var canPlay = !!audio[0].canPlayType && audio[0].canPlayType('audio/mpeg; codecs="mp3"') != "";
+
+    if(!canPlay){
+
+    for(var i=audio.length-1;i>=0;i--){
+
+    var parent = audio[i].parentNode;
+
+    parent.removeChild(audio[i]);
+
+    var parent2 = parent.parentNode;
+
+    parent2.removeChild(parent);
+
+    }
+
+    }
+
+    }
+
+    });
+
+    </script>
+    
+</div>
+    
+     <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+     <h4 align="center"> Últimas noticias</h4>
+    
+    
+   <ion-list>
+  <ion-item>
+    <ion-thumbnail item-start>
+      <img src="img/thumbnail-totoro.png">
+    </ion-thumbnail>
+    <h2>My Neighbor Totoro</h2>
+    <p>Hayao Miyazaki • 1988</p>
+    <button ion-button clear item-end>Ver</button>
+      
+  </ion-item>
+       <ion-item>
+    <ion-thumbnail item-start>
+      <img src="img/thumbnail-totoro.png">
+    </ion-thumbnail>
+    <h2>Raiders of the Lost</h2>
+    <p>Hayao Miyazaki • 1988</p>
+    <button ion-button clear item-end>Ver</button>
+  </ion-item>
+       
+       <ion-item>
+    <ion-thumbnail item-start>
+      <img src="img/thumbnail-totoro.png">
+    </ion-thumbnail>
+    <h2>My Neighbor Totoro</h2>
+    <p>Hayao Miyazaki • 1988</p>
+    <button ion-button clear item-end>Ver</button>
+  </ion-item>
+       
+</ion-list>
+    
+    <footer>
+    <div class="container-vermas">
+     <a class="vermas" href=""> Ver más </a>
+        <div class="icon-vermas">
+      <ion-icon name="ios-arrow-down"></ion-icon>
+             </div> 
+    </div>
+    </footer>
+</ion-content>

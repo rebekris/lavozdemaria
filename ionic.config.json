@@ -1,0 +1,8 @@
+{
+  "name": "lavozdemaria",
+  "app_id": "2ad6e452",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
