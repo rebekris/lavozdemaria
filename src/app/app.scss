@@ -1,13 +1,18 @@
-h1, h3, h4{ 
+h1, h3, h4,h5{ 
     color:#991B1A;
-     }    
+     }      
 
-.tabbar {
+
+.tabbar, .toolbar-background {
     background-image: url(../assets/imgs/bg-tabs.jpg) !important;
     background-repeat: repeat-x !important; 
     background-position: center bottom !important;
     background-size: contain !important;
     }
+
+.toolbar-title{
+    color: white;
+}
 
 .tabs-md .tab-button {
     color: white !important;
@@ -31,7 +36,32 @@ h1, h3, h4{
     color: white;
     }
 
-.tabs-md .tab-button[aria-selected=true] {
+ .container-vermas{
+     background-color: transparent;
+     position: relative;
+     width: 40%;
+     left: 30%;
+     bottom: 12px;
+     border-style:solid;
+     padding: 8px;
+     border-width: thin;
+     border-color: #D08E00;
+     color: #D08E00;
+    }
+    
+    
+   .icon-vermas {
+     margin-left: 57px;
+     }
+
+    
+     .container-vermas a {
+     color: #D08E00;
+     text-decoration: none;
+     margin-left: 37px;
+     }
+
+.button-clear-md {
     color: #D08E00;
-    padding: 0;
+    
 }

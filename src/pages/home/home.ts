@@ -11,19 +11,6 @@ export class HomePage {
     
   }
   
-  
-  
-  presentLoadingDefault() {
-  let loading = this.loadingCtrl.create({
-    content: 'Please wait...'
-  });
-
-  loading.present();
-
-  setTimeout(() => {
-    loading.dismiss();
-  }, 5000);
-}
 
 
 

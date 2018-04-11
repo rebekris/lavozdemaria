@@ -1,11 +1,40 @@
+/DONACIONES/
+
 <ion-header>
   <ion-navbar>
     <ion-title>
-      About
+      Donaciones
     </ion-title>
+     
+      
+      
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content>
 
+     <ion-refresher (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content> </ion-refresher-content>
+    </ion-refresher>
+    
+    
+    
+    
+    <div class="text-container">
+    <p>    
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa. 
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa. 
+    </p>    
+    </div>
+    
+    
+    <footer>
+    <div class="container-vermas">
+     <a class="vermas" href="">Donaciones </a>
+        <div class="icon-vermas">
+      <ion-icon name="ios-arrow-down"></ion-icon>
+             </div> 
+    </div>
+    </footer>
+    
 </ion-content>
