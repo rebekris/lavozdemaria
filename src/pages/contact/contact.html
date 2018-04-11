@@ -1,17 +1,65 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Contact
+      Contacto
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content>
+<ion-content>   
   <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-start></ion-icon>
-      @ionicframework
-    </ion-item>
+      <ion-item>
+        <div class="uno">
+            <h2 ion-title> Dirección </h2>
+            <p ion-text> Cdla. Bolivariana Mz. A Villa 9. <br> <br> Calle Andrés Bello y Av. del Libertador </p>
+        </div>
+        <div class="dos">
+            <h2 ion-title> Teléfono </h2>
+            <p ion-text> +593(04)2598860 - 2598870 </p>
+        </div>
+        <div class="tres">
+            <h2 ion-title> Horario de atención </h2>
+            <p ion-text> 09h00 a 18h00 </p>
+        </div>
+        <div class="cuatro">
+            <h2 ion-title> E-mail </h2>
+            <p ion-text> administracion@lavozdemaria.ec </p> 
+        </div>
+      </ion-item>
+  </ion-list>
+
+  <ion-list>
+      <div class="imagen">
+          <img class="map" src="../../assets/imgs/new.png" >
+      </div>
+      <h3 ion-title> Contáctanos </h3>
+      <p ion-text class="formulario"> Por favor llene todos los campos requeridos (*). </p>
+        <form>
+            <ion-item>
+                <ion-icon class="tamanio" name="person" item-start></ion-icon>
+                <ion-label stacked>Nombres*</ion-label>
+                <ion-input type="text" placeholder="Nombre"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-icon class="tamanio" name="call" item-start></ion-icon>
+                <ion-label stacked>Teléfono*</ion-label>
+                <ion-input type="text" placeholder="Teléfono"></ion-input>
+            </ion-item>
+            <ion-item>
+            <ion-icon class="tamanio" name="mail" item-start></ion-icon>
+                <ion-label stacked>E-mail*</ion-label>
+                <ion-input type="email" placeholder="Email"></ion-input>
+          </ion-item>
+            <ion-item>
+            <ion-icon class="tamanio" name="text" item-start></ion-icon>
+                <ion-label stacked>Mensaje*</ion-label>
+                <ion-input type="text" placeholder="Mensaje"></ion-input>
+          </ion-item>
+          <br> <br>
+          <div class="boton">
+              <a> &nbsp;&nbsp;&nbsp; Enviar &nbsp;&nbsp;&nbsp;</a>
+          </div>
+      </form>
+      
   </ion-list>
 </ion-content>
