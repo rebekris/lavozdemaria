@@ -1,0 +1,21 @@
+ultimasnoticias(
+    {
+        "type": "UltimasNoticias",
+        "etiqueta": "Últimas noticias",
+        "seccion":"Home",
+        "idioma":"es",
+        "noticias": [ 
+            {
+                "formato": "Opinión",
+                "idformato": "3",
+                "fecha": "13/04/2018",
+                "titulo": "Brasil: a la espera de reformas para volver a la senda del crecimiento",
+                "descripcionCorta": "",
+                "descripcionLarga": "",
+                "url": "https://www.caixabank.com/comunicacion/noticia/brasil-a-la-espera-de-reformas-para-volver-a-la-senda-del-crecimiento_es.html?id=40815",
+                "urlmedia": "https://www.caixabank.com/docs/comunicacion/62556_mini.jpg",
+                "tipovideo": ""
+            }
+             ]
+    }
+)
