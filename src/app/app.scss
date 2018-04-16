@@ -61,7 +61,13 @@ h1, h3, h4,h5{
      margin-left: 37px;
      }
 
-.button-clear-md {
-    color: #D08E00;
-    
+
+.button-clear-ios {
+    border-color: transparent;
+    color: #D08E00 ;
+    background-color: transparent;
+    text-transform: uppercase;
 }
+
+
+
