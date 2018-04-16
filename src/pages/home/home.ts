@@ -13,21 +13,9 @@ export class HomePage {
   constructor(public navCtrl: NavController) {
     
   }
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-  
 
-
-
-doRefresh(refresher){
-=======
 
     doRefresh(refresher){
->>>>>>> gloria
-=======
-
-    doRefresh(refresher){
->>>>>>> Stashed changes
        setTimeout(() => {
          console.log('Async operation has ended');
          refresher.complete();
