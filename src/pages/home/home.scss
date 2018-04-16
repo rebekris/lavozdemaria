@@ -3,41 +3,44 @@ page-home {
  .radio {
      background-color: #E9E8E7;
      position: relative;
-     width: 80%;
-     left: 10%;
-     bottom: 12px;
+     width: 85%;
+     left: 7%;
+     bottom: 7%;
      border-style:solid;
      border-width: thin;
      border-color: #D08E00;
+     background-color: white;
+     overflow: hidden;
      
      }
 
     .container-vermas{
-     background-color: transparent;
-     position: relative;
-     width: 40%;
-     left: 30%;
-     bottom: 12px;
-     border-style:solid;
-     padding: 8px;
-     border-width: thin;
-     border-color: #D08E00;
-     color: #D08E00;
+        position: relative;
+        width: 40%;
+        left: 30%;
+        bottom: 12px;
+        border-style:solid;
+        padding: 8px;
+        border-width: thin;
+        border-color: #D08E00;
+        color: #D08E00;
+        text-align: center;
+    } 
 
-     
-     }
-    
-    
-   .icon-vermas {
-     margin-left: 57px;   
-     }
-    
-    
-     .container-vermas a {
-     color: #D08E00;
-     text-decoration: none;
-     margin-left:37px; 
-     }
+    a.vermas{
+        margin-right: 25%;
+    }
+
+    .icon-vermas {
+        margin-left: 0%; 
+    }
+
+
+    .container-vermas a {
+        color: #D08E00;
+        text-decoration: none;
+        margin-left: 23%; 
+    }
     
     
     .tabs-md .tab-button {
@@ -52,5 +55,26 @@ page-home {
     position: relative;
     text-align: center;
     }
+    
+    
+    .logo {
+        width: 20%;
+        left: 40%;
+        padding: 5%;
+        background-image: url(../assets/imgs/logo-maria.png) !important;
+        background-repeat:no-repeat;
+        background-position: center;
+        background-size: 80%;
+    
+   
+    }
+    
+    audio {
+        margin-left: 60px;
+   
+    }
+    
+    
+    
      
 }

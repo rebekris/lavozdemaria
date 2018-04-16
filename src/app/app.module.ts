@@ -13,6 +13,7 @@ import { NewsPage } from '../pages/news/news';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { RemoteServiceProvider } from '../providers/remote-service/remote-service';
+import { PruebaProvider } from '../providers/prueba/prueba';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { RemoteServiceProvider } from '../providers/remote-service/remote-servic
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    RemoteServiceProvider
+    RemoteServiceProvider,
+    PruebaProvider
   ]
 })
 export class AppModule {}
