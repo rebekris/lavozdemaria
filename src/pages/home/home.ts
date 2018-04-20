@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { NewsPage } from '../news/news';
+import { PruebaProvider } from '../../providers/prueba/prueba';
 
 @Component({
   selector: 'page-home',
@@ -8,9 +9,11 @@ import { NewsPage } from '../news/news';
 })
 
 export class HomePage {
+    news:any=[]; /*Llamar a arreglo de cualquier tipo*/
+    
 
   
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, public provider: PruebaProvider) {
     
   }
 
@@ -25,5 +28,25 @@ export class HomePage {
     showNewsPage(){
         this.navCtrl.push(NewsPage);
     }
+    
+    
+      ionViewDidEnter(){
+        this.provider.getArticles().subscribe(
+        result=>{
+            this.news= result.articles;
+            console.log("Texto: " + this.news + "...");
+            },
+            
+            error => {
+                console.log("Texto: " + error);
+            }, 
+            ()=> 
+                {
+                  console.log("WELL DONE!");
+            },  
+        );
+    }
+    
+    
 
 }

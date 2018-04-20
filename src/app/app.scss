@@ -1,5 +1,6 @@
 h1, h3, h4,h5{ 
     color:#991B1A;
+    padding:1%;
      }      
 
 
@@ -9,6 +10,11 @@ h1, h3, h4,h5{
     background-position: center bottom !important;
     background-size: contain !important;
     }
+
+
+.button-clear-md {
+    color:#D08E00;
+     }
 
 .toolbar-title{
     color: white;
@@ -36,14 +42,23 @@ h1, h3, h4,h5{
     color: white;
     }
 
+ a.vermas {
+    position: relative;
+    text-align: center;
+    margin-left: 32%;
+    color: #D08E00;
+    text-decoration: none;
+     
+    }
+
  .container-vermas{
      background-color: transparent;
      position: relative;
      width: 40%;
      left: 30%;
-     bottom: 12px;
+     bottom: 3%;
      border-style:solid;
-     padding: 8px;
+     padding: 2%;
      border-width: thin;
      border-color: #D08E00;
      color: #D08E00;
@@ -51,14 +66,7 @@ h1, h3, h4,h5{
     
     
    .icon-vermas {
-     margin-left: 57px;
-     }
-
-    
-     .container-vermas a {
-     color: #D08E00;
-     text-decoration: none;
-     margin-left: 37px;
+     margin-left: 45%;
      }
 
 

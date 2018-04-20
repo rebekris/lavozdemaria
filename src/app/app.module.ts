@@ -3,6 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
+import {HttpClientModule} from '@angular/common/http';
+import {HttpModule} from '@angular/http';
+
+
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
@@ -16,6 +20,7 @@ import { RemoteServiceProvider } from '../providers/remote-service/remote-servic
 import { PruebaProvider } from '../providers/prueba/prueba';
 
 
+
 @NgModule({
   declarations: [
     MyApp,
@@ -27,7 +32,7 @@ import { PruebaProvider } from '../providers/prueba/prueba';
     NewsPage
   ],
   imports: [
-    BrowserModule,
+    BrowserModule,HttpClientModule, HttpModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -39,13 +44,14 @@ import { PruebaProvider } from '../providers/prueba/prueba';
     TabsPage,
     EventsPage,
     NewsPage
+
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
     RemoteServiceProvider,
-    PruebaProvider
+    PruebaProvider,
+    {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
 export class AppModule {}
