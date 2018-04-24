@@ -15,16 +15,15 @@
 </ion-header>
 
 
-<ion-content padding>
-    <img src="i../../assets/imgs/home.png">
+<ion-content *ngIf= "savedArticles">
+    <img [src]="savedArticles.images.image_intro">
     
-    <h5 align="center"> My Neighbor Totoro</h5>
+    <h5 align="center">{{savedArticles.title}} </h5>
     
-    <div class="text-container">
-    <p>    
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa. 
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa. 
-    </p>    
+
+    <div class="text-container"  [innerHTML]="savedArticles.content" >
+        
+       {{savedArticles.content}}    
     </div>
     
 </ion-content>

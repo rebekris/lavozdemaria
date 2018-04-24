@@ -26,12 +26,19 @@ export class HomePage {
     }
     
     showNewsPage(article){
-        this.navCtrl.push(NewsPage);
+        this.navCtrl.push(
+            NewsPage,
+            {
+                art : article
+            }
+            );
+        
     }
     
     
       ionViewDidEnter(){
-        this.provider.getArticles('mihttp.net/demo/lavozdemaria/end/get/content/tagarticles?tagid=2').subscribe(result=>{
+        this.provider.getArticles('mihttp.net/demo/lavozdemaria/end/get/content/tagarticles?tagid=2').subscribe(
+        result=>{
             this.news= result.articles;
             console.log("Texto: " + this.news + "...");
             },
