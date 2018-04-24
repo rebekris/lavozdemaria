@@ -1,13 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-/**
- * Generated class for the EventsPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
 @IonicPage()
 @Component({
   selector: 'page-events',
@@ -21,13 +14,6 @@ export class EventsPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad EventsPage');
   }
-  
-  
-  doRefresh(refresher){
-       setTimeout(() => {
-         console.log('Async operation has ended');
-         refresher.complete();
-       }, 2000);
-    }
+ 
 
 }
