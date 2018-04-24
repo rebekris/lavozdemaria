@@ -26,7 +26,13 @@ export class HomePage {
     }
     
     showNewsPage(article){
-        this.navCtrl.push(NewsPage);
+        this.navCtrl.push(
+            NewsPage,
+            {
+                art : article
+            }
+            );
+        
     }
     
     

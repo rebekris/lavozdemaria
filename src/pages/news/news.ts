@@ -15,7 +15,12 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class NewsPage {
 
+  savedArticles: any;
+  
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.savedArticles= this.navParams.get('art');
+  
   }
 
   ionViewDidLoad() {
