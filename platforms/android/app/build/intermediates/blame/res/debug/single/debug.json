@@ -20,12 +20,12 @@
         "source": "/home/mihttp-27/lavozdemaria/platforms/android/app/src/main/res/mipmap-xhdpi/icon.png"
     },
     {
-        "merged": "/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_action_next_item.png.flat",
-        "source": "/home/mihttp-27/lavozdemaria/platforms/android/app/src/main/res/drawable-xhdpi/ic_action_next_item.png"
-    },
-    {
         "merged": "/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/res/merged/debug/drawable-port-ldpi_screen.png.flat",
         "source": "/home/mihttp-27/lavozdemaria/platforms/android/app/src/main/res/drawable-port-ldpi/screen.png"
+    },
+    {
+        "merged": "/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_action_next_item.png.flat",
+        "source": "/home/mihttp-27/lavozdemaria/platforms/android/app/src/main/res/drawable-xhdpi/ic_action_next_item.png"
     },
     {
         "merged": "/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_action_remove.png.flat",

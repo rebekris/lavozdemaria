@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Apr 24 12:57:41 ECT 2018
+#Tue Apr 24 15:08:05 ECT 2018
 122.file=/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/assets/debug/www/cordova-js-src/platform.js
 60.set=ANDROID_RESOURCE
 52.set=ASSET

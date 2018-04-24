@@ -56,6 +56,18 @@
           <key>NSExceptionAllowsInsecureHTTPLoads</key>
           <true/>
         </dict>
+        <key>mihttp.net/demo/lavozdemaria/end/get/content/tagarticles</key>
+        <dict>
+          <key>NSIncludesSubdomains</key>
+          <true/>
+          <key>NSExceptionAllowsInsecureHTTPLoads</key>
+          <true/>
+        </dict>
+        <key>mihttp.net</key>
+        <dict>
+          <key>NSExceptionAllowsInsecureHTTPLoads</key>
+          <true/>
+        </dict>
         <key>192.168.100.29</key>
         <dict>
           <key>NSExceptionAllowsInsecureHTTPLoads</key>

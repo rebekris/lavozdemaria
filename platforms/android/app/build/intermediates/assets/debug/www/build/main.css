@@ -25894,8 +25894,11 @@ page-home audio {
   margin-left: 60px;
 }
 
-page-news p {
+page-news .text-container {
   text-align: justify;
+  padding: 8%;
+  font-family: 'Roboto';
+  font-size: 100%;
 }
 
 page-news .back-button-icon-md {
