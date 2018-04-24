@@ -93,14 +93,12 @@
    <ion-list>
   <ion-item *ngFor="let article of news"> 
     
-    <ion-thumbnail item-start>
+    <ion-thumbnail item-start *ngIf="article.images.image_intro">
       <img [src]="article.images.image_intro"> 
-         <div>
-              
-          </div>     
+         
     </ion-thumbnail>
     <h2>{{article.title}}   </h2>
-    <p>{{ article.published_date }}</p>
+    <p [innerHTML]="article.content"> {{article.content}}</p>
     <button ion-button (click)="showNewsPage(article)" clear item-end>Ver</button>
       
   </ion-item>

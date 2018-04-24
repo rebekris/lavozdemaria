@@ -19,6 +19,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { RemoteServiceProvider } from '../providers/remote-service/remote-service';
 import { PruebaProvider } from '../providers/prueba/prueba';
 
+import { TruncatePipe } from '../pipes/truncate/truncate';
+
+import { SocialSharing } from '@ionic-native/social-sharing';
+
+
 
 
 @NgModule({
@@ -29,7 +34,8 @@ import { PruebaProvider } from '../providers/prueba/prueba';
     HomePage,
     TabsPage,
     EventsPage,
-    NewsPage
+    NewsPage,
+    TruncatePipe
   ],
   imports: [
     BrowserModule,HttpClientModule, HttpModule,

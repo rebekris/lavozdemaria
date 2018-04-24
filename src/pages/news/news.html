@@ -7,21 +7,21 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Noticia</ion-title>
+    <ion-title>Últimas Noticias</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content *ngIf= "savedArticles">
-    <img [src]="savedArticles.images.image_intro">
+    <img class="news-image" [src]="savedArticles.images.image_intro">
     
     <h5 align="center">{{savedArticles.title}} </h5>
     
 
     <div class="text-container"  [innerHTML]="savedArticles.content" >
         
-       {{savedArticles.content}}    
+       {{savedArticles.content | truncate:[50] }}  
     </div>
     
 </ion-content>
