@@ -4,7 +4,7 @@ import { NewsPage } from '../news/news';
 import { PruebaProvider } from '../../providers/prueba/prueba';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/toPromise';
-import { SocialSharing } from '@ionic-native/social-sharing';
+
 
 
 @Component({
@@ -17,7 +17,7 @@ export class HomePage {
     
 
   
-  constructor(public navCtrl: NavController, public provider: PruebaProvider, private socialSharing: SocialSharing) {
+  constructor(public navCtrl: NavController, public provider:PruebaProvider) {
   
   
     

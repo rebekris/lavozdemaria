@@ -89,9 +89,9 @@
      <ion-refresher (ionRefresh)="doRefresh($event)">
     <ion-refresher-content></ion-refresher-content>
   </ion-refresher>
-     <h4 align="center"> Últimas noticias</h4>
+     <h4 align="center"> ÚLTIMAS NOTICIAS</h4>
    <ion-list>
-  <ion-item *ngFor="let article of news"> 
+  <ion-item *ngFor="let article of news" (click)="showNewsPage(article)" clear item-end>  
     
     <ion-thumbnail item-start *ngIf="article.images.image_intro">
       <img [src]="article.images.image_intro"> 
@@ -99,12 +99,10 @@
     </ion-thumbnail>
     <h2>{{article.title}}   </h2>
     <p> {{article.metadesc}}</p>
-    <button ion-button (click)="showNewsPage(article)" clear item-end>Ver</button>
+    <button ion-button (click)="showNewsPage(article)" clear item-end >Ver</button>
       
   </ion-item>
-      
-    
-        
+          
 </ion-list>
 
 

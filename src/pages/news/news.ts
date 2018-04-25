@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { SocialSharing } from '@ionic-native/social-sharing';
 
 /**
  * Generated class for the NewsPage page.
@@ -18,7 +19,7 @@ export class NewsPage {
   savedArticles: any;
   
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,private socialSharing: SocialSharing) {
     this.savedArticles= this.navParams.get('art');
   
   }
@@ -31,9 +32,9 @@ export class NewsPage {
   
   share(){
   	let self= this;
-  	let description = self.user + " has given you a FREE Takay Blend. To claim your free ready-to-blend superfood meal, enter the promo code " + self.coupon[0].name + " on your first purchase.";
+  	let description = self.savedArticles.content;
 
-  	this.socialSharing.share(description, 'Takay Blend','', ' Find more at www.takayblends.com').then(function() {
+  	this.socialSharing.share(description, 'Radio La Voz de María','', ' Encuentra más información en radio.lavozdemaria.ec').then(function() {
 	  console.log('Successful share');
 	}).catch(function(error) {
 	  console.log('Error sharing:', error)
