@@ -26,5 +26,21 @@ export class NewsPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad NewsPage');
   }
+  
+  
+  
+  share(){
+  	let self= this;
+  	let description = self.user + " has given you a FREE Takay Blend. To claim your free ready-to-blend superfood meal, enter the promo code " + self.coupon[0].name + " on your first purchase.";
+
+  	this.socialSharing.share(description, 'Takay Blend','', ' Find more at www.takayblends.com').then(function() {
+	  console.log('Successful share');
+	}).catch(function(error) {
+	  console.log('Error sharing:', error)
+	})
+
+     
+
+  }
 
 }

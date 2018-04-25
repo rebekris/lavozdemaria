@@ -21,7 +21,11 @@
 
     <div class="text-container"  [innerHTML]="savedArticles.content" >
         
-       {{savedArticles.content | truncate:[50] }}  
+       {{savedArticles.content}}  
+        
+        <div class="button-clear" small (click)="share()" ion-button color="dark">
+            <p>Compartir en redes sociales </p>
+        </div>
     </div>
-    
 </ion-content>
+

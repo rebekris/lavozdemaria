@@ -5,6 +5,7 @@ import { MyApp } from './app.component';
 
 import {HttpClientModule} from '@angular/common/http';
 import {HttpModule} from '@angular/http';
+import { Http } from '@angular/http'; 
 
 
 import { AboutPage } from '../pages/about/about';
@@ -18,10 +19,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { RemoteServiceProvider } from '../providers/remote-service/remote-service';
 import { PruebaProvider } from '../providers/prueba/prueba';
-
-import { TruncatePipe } from '../pipes/truncate/truncate';
-
 import { SocialSharing } from '@ionic-native/social-sharing';
+
 
 
 
@@ -34,8 +33,7 @@ import { SocialSharing } from '@ionic-native/social-sharing';
     HomePage,
     TabsPage,
     EventsPage,
-    NewsPage,
-    TruncatePipe
+    NewsPage
   ],
   imports: [
     BrowserModule,HttpClientModule, HttpModule,
@@ -56,6 +54,7 @@ import { SocialSharing } from '@ionic-native/social-sharing';
     StatusBar,
     SplashScreen,
     RemoteServiceProvider,
+    SocialSharing,
     PruebaProvider,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]

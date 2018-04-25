@@ -2,6 +2,10 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { NewsPage } from '../news/news';
 import { PruebaProvider } from '../../providers/prueba/prueba';
+import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/toPromise';
+import { SocialSharing } from '@ionic-native/social-sharing';
+
 
 @Component({
   selector: 'page-home',
@@ -13,7 +17,9 @@ export class HomePage {
     
 
   
-  constructor(public navCtrl: NavController, public provider: PruebaProvider) {
+  constructor(public navCtrl: NavController, public provider: PruebaProvider, private socialSharing: SocialSharing) {
+  
+  
     
   }
 
@@ -54,5 +60,8 @@ export class HomePage {
     }
     
     
-
+    
+    
 }
+
+

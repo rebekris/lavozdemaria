@@ -1,5 +1,4 @@
 import { Pipe, PipeTransform } from '@angular/core';
-
 /**
  * Generated class for the TruncatePipe pipe.
  *
