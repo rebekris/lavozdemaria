@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Apr 25 13:32:26 ECT 2018
+#Wed Apr 25 15:31:55 ECT 2018
 122.file=/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/transforms/stripDebugSymbol/debug/0/lib/arm64-v8a/libcardioRecognizer.so
 60.set=NATIVE_RESOURCE
 129.file=/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/drawable-hdpi-v4/ic_action_next_item.png

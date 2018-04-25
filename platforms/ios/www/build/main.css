@@ -25720,29 +25720,20 @@ h1, h3, h4, h5 {
   color: white;
 }
 
+.container-vermas {
+  position: relative;
+  color: #D08E00;
+  text-align: center;
+}
+
 a.vermas {
   position: relative;
-  text-align: center;
-  margin-left: 32%;
+  padding: 10px 35px;
+  border: 1px solid #d08e00;
+  line-height: 47px;
+  margin: 0;
   color: #D08E00;
   text-decoration: none;
-}
-
-.container-vermas {
-  background-color: transparent;
-  position: relative;
-  width: 40%;
-  left: 30%;
-  bottom: 3%;
-  border-style: solid;
-  padding: 2%;
-  border-width: thin;
-  border-color: #D08E00;
-  color: #D08E00;
-}
-
-.icon-vermas {
-  margin-left: 45%;
 }
 
 .button-clear-ios {
@@ -25758,11 +25749,6 @@ page-about .text-container {
   font-family: "Roboto";
   font-size: 14px;
   margin-top: 15%;
-}
-
-page-about .vermas {
-  margin-left: 25px;
-  text-align: center;
 }
 
 page-about .text-black {
@@ -25844,31 +25830,8 @@ page-home .radio {
   overflow: hidden;
 }
 
-page-home .container-vermas {
-  position: relative;
-  width: 40%;
-  left: 30%;
-  bottom: 12px;
-  border-style: solid;
-  padding: 8px;
-  border-width: thin;
-  border-color: #D08E00;
-  color: #D08E00;
-  text-align: center;
-}
-
-page-home a.vermas {
-  margin-right: 25%;
-}
-
 page-home .icon-vermas {
   margin-left: 0%;
-}
-
-page-home .container-vermas a {
-  color: #D08E00;
-  text-decoration: none;
-  margin-left: 23%;
 }
 
 page-home .tabs-md .tab-button {
@@ -25877,11 +25840,6 @@ page-home .tabs-md .tab-button {
 
 page-home .button-clear-md {
   color: #D08E00 !important;
-}
-
-page-home a.vermas {
-  position: relative;
-  text-align: center;
 }
 
 page-home .logo {
@@ -25921,7 +25879,13 @@ page-news h5 {
 }
 
 page-news .button-clear {
-  margin-left: 8%;
-  background-color: #D08E00;
+  margin-left: 32%;
+  margin-right: 32%;
+  background-color: transparent;
+  border-style: solid;
   padding: 5%;
+  border-width: thin;
+  border-color: #D08E00;
+  color: #D08E00;
+  text-align: center;
 }
