@@ -11,4 +11,28 @@ page-news {
         color: white !important;
     }
     
+     img {
+        width: 100%;   
+    }
+    
+    h5{
+       margin-left: 5%;
+       margin-right: 5%;
+       margin-bottom: -5%;
+       text-align: center;
+    
+    }
+    
+    .button-clear{
+        margin-left: 30%;
+        margin-right: 30%;
+        background-color: transparent;
+        border-style:solid;
+        padding: 5%;
+        border-width: thin;
+        border-color: #D08E00;
+        color: #D08E00;
+        text-align: center;
+    }
+    
 }

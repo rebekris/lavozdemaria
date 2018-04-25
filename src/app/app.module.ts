@@ -6,7 +6,6 @@ import { MyApp } from './app.component';
 import {HttpClientModule} from '@angular/common/http';
 import {HttpModule} from '@angular/http';
 
-
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
@@ -18,7 +17,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { RemoteServiceProvider } from '../providers/remote-service/remote-service';
 import { PruebaProvider } from '../providers/prueba/prueba';
-
+import { SocialSharing } from '@ionic-native/social-sharing';
 
 @NgModule({
   declarations: [
@@ -49,6 +48,7 @@ import { PruebaProvider } from '../providers/prueba/prueba';
     StatusBar,
     SplashScreen,
     RemoteServiceProvider,
+    SocialSharing,
     PruebaProvider,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]

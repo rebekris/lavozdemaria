@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { NewsPage } from '../news/news';
 import { PruebaProvider } from '../../providers/prueba/prueba';
+import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/toPromise';
 
 @Component({
   selector: 'page-home',
@@ -11,12 +13,10 @@ import { PruebaProvider } from '../../providers/prueba/prueba';
 export class HomePage {
     news:any=[]; /*Llamar a arreglo de cualquier tipo*/
     
-
   
   constructor(public navCtrl: NavController, public provider: PruebaProvider) {
     
   }
-
 
     doRefresh(refresher){
        setTimeout(() => {
@@ -31,10 +31,8 @@ export class HomePage {
             {
                 art : article
             }
-            );
-        
+            );    
     }
-    
     
       ionViewDidEnter(){
         this.provider.getArticles().subscribe(
@@ -52,7 +50,8 @@ export class HomePage {
             },  
         );
     }
-    
-    
 
+    
+    
 }
+

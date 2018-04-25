@@ -1,7 +1,7 @@
 <ion-header>
   <ion-navbar>
     <ion-title>Radio La Voz de María &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<ion-icon name="chatbubbles" onclick="window.open('https://tawk.to/chat/5acd28c14b401e45400e84a1/default/?$_tawk_popout=true', '_system', 'location=yes');"> </ion-icon> </ion-title>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<ion-icon name="chatbubbles" onclick="window.open('https://tawk.to/chat/5acd28c14b401e45400e84a1/default/?$_tawk_popout=true', '_system', 'location=yes');"> </ion-icon> </ion-title>     
        <link href="home.scss">
         <link href="home.ts">
   </ion-navbar>
@@ -89,22 +89,26 @@
     <ion-refresher-content></ion-refresher-content>
   </ion-refresher>
      <h4 align="center"> Últimas noticias</h4>
-    
-    
    <ion-list>
-        <ion-item *ngFor="let article of news"> 
-            <ion-thumbnail item-start>
-                <img [src]="article.images.image_intro">
-                <div> 
-                
-                </div>
-            </ion-thumbnail>
-            <h2>{{article.title}}   </h2>
-            <p>{{ article.published_date }}</p>
-            <button ion-button (click)="showNewsPage(article)" clear item-end>Ver</button>
-            </ion-item>
-    </ion-list>
+
+
+    <ion-item *ngFor="let article of news"> 
     
+    <ion-thumbnail item-start *ngIf="article.images.image_intro">
+      <img [src]="article.images.image_intro"> 
+         
+    </ion-thumbnail>
+    <h2>{{article.title}}   </h2>
+    <p> {{article.metadesc}}</p>
+    <button ion-button (click)="showNewsPage(article)" clear item-end>Ver</button>
+      
+  </ion-item>
+      
+    
+        
+</ion-list>
+
+
     <footer>
     <div class="container-vermas">
      <a class="vermas" href=""> Ver más </a>

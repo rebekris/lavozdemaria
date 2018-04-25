@@ -25908,3 +25908,20 @@ page-news .text-container {
 page-news .back-button-icon-md {
   color: white !important;
 }
+
+page-news img {
+  width: 100%;
+}
+
+page-news h5 {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: -5%;
+  text-align: center;
+}
+
+page-news .button-clear {
+  margin-left: 8%;
+  background-color: #D08E00;
+  padding: 5%;
+}

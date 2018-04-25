@@ -27,10 +27,22 @@
     },
     "cordova-plugin-inappbrowser": {
       "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-x-socialsharing": {
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "com.paypal.cordova.mobilesdk": {
+      "PACKAGE_NAME": "io.ionic.starter"
     }
   },
   "dependent_plugins": {
     "cordova-plugin-file": {
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "es6-promise-plugin": {
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "card.io.cordova.mobilesdk": {
       "PACKAGE_NAME": "io.ionic.starter"
     }
   }

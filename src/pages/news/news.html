@@ -7,23 +7,32 @@
 <ion-header>
 
   <ion-navbar>
+      
     <ion-title>Noticia &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<ion-icon name="chatbubbles" onclick="window.open('https://tawk.to/chat/5acd28c14b401e45400e84a1/default/?$_tawk_popout=true', '_system', 'location=yes');"> </ion-icon>
       </ion-title>
+
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content *ngIf= "savedArticles">
-    <img [src]="savedArticles.images.image_intro">
+
+    <img class="news-image" [src]="savedArticles.images.image_intro">
     
     <h5 align="center">{{savedArticles.title}} </h5>
     
 
     <div class="text-container"  [innerHTML]="savedArticles.content" >
         
-       {{savedArticles.content}}    
+       {{savedArticles.content}}  
+        
     </div>
-    
+    <div class="button-clear" small (click)="share()" ion-button color="light">
+              <ion-icon name="share"> </ion-icon>
+        <p> &nbsp; Compartir </p>
+        </div>
+    <p> &nbsp; </p>
 </ion-content>
+

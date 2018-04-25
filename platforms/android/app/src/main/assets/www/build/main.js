@@ -1,6 +1,6 @@
 webpackJsonp([3],{
 
-/***/ 100:
+/***/ 101:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -39,13 +39,14 @@ var EventsPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 101:
+/***/ 102:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NewsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_social_sharing__ = __webpack_require__(156);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -57,6 +58,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 /**
  * Generated class for the NewsPage page.
  *
@@ -64,19 +66,29 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Ionic pages and navigation.
  */
 var NewsPage = /** @class */ (function () {
-    function NewsPage(navCtrl, navParams) {
+    function NewsPage(navCtrl, navParams, socialSharing) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
+        this.socialSharing = socialSharing;
         this.savedArticles = this.navParams.get('art');
     }
     NewsPage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad NewsPage');
     };
+    NewsPage.prototype.share = function () {
+        var self = this;
+        var description = self.savedArticles.metadesc;
+        this.socialSharing.share(description, 'Radio La Voz de María', '', ' Leer más www.lavozdemaria.ec').then(function () {
+            console.log('Successful share');
+        }).catch(function (error) {
+            console.log('Error sharing:', error);
+        });
+    };
     NewsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-news',template:/*ion-inline-start:"/home/mihttp-27/lavozdemaria/src/pages/news/news.html"*/'<!--\n  Generated template for the NewsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Noticia &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<ion-icon name="chatbubbles" onclick="window.open(\'https://tawk.to/chat/5acd28c14b401e45400e84a1/default/?$_tawk_popout=true\', \'_system\', \'location=yes\');"> </ion-icon>\n      </ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content *ngIf= "savedArticles">\n    <img [src]="savedArticles.images.image_intro">\n    \n    <h5 align="center">{{savedArticles.title}} </h5>\n    \n\n    <div class="text-container"  [innerHTML]="savedArticles.content" >\n        \n       {{savedArticles.content}}    \n    </div>\n    \n</ion-content>'/*ion-inline-end:"/home/mihttp-27/lavozdemaria/src/pages/news/news.html"*/,
+            selector: 'page-news',template:/*ion-inline-start:"/home/mihttp-27/lavozdemaria/src/pages/news/news.html"*/'<!--\n  Generated template for the NewsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n      \n    <ion-title>Noticia &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<ion-icon name="chatbubbles" onclick="window.open(\'https://tawk.to/chat/5acd28c14b401e45400e84a1/default/?$_tawk_popout=true\', \'_system\', \'location=yes\');"> </ion-icon>\n      </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content *ngIf= "savedArticles">\n\n    <img class="news-image" [src]="savedArticles.images.image_intro">\n    \n    <h5 align="center">{{savedArticles.title}} </h5>\n    \n\n    <div class="text-container"  [innerHTML]="savedArticles.content" >\n        \n       {{savedArticles.content}}  \n        \n    </div>\n    <div class="button-clear" small (click)="share()" ion-button color="dark">\n            <p>Compartir en redes sociales </p>\n        </div>\n    <br>\n</ion-content>\n\n'/*ion-inline-end:"/home/mihttp-27/lavozdemaria/src/pages/news/news.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_social_sharing__["a" /* SocialSharing */]])
     ], NewsPage);
     return NewsPage;
 }());
@@ -85,7 +97,7 @@ var NewsPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 113:
+/***/ 114:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -98,24 +110,24 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 113;
+webpackEmptyAsyncContext.id = 114;
 
 /***/ }),
 
-/***/ 154:
+/***/ 155:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
 	"../pages/events/events.module": [
-		284,
+		286,
 		2
 	],
 	"../pages/news/news.module": [
-		285,
+		287,
 		1
 	],
 	"../pages/test/test.module": [
-		286,
+		288,
 		0
 	]
 };
@@ -130,21 +142,21 @@ function webpackAsyncContext(req) {
 webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
-webpackAsyncContext.id = 154;
+webpackAsyncContext.id = 155;
 module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 198:
+/***/ 199:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__about_about__ = __webpack_require__(199);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__contact_contact__ = __webpack_require__(200);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(201);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__events_events__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__about_about__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__contact_contact__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__events_events__ = __webpack_require__(101);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -167,7 +179,7 @@ var TabsPage = /** @class */ (function () {
         this.tab4Root = __WEBPACK_IMPORTED_MODULE_2__contact_contact__["a" /* ContactPage */];
     }
     TabsPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/mihttp-27/lavozdemaria/src/pages/tabs/tabs.html"*/'<ion-tabs>\n  <ion-tab [root]="tab1Root" tabTitle="Noticias" tabIcon="ios-paper-outline"></ion-tab>\n<ion-tab [root]="tab2Root" tabTitle="Eventos" tabIcon="ios-calendar-outline"></ion-tab> \n  <ion-tab [root]="tab3Root" tabTitle="Donaciones" tabIcon="ios-heart-outline"></ion-tab>\n  <ion-tab [root]="tab4Root" tabTitle="Contáctanos" tabIcon="ios-navigate-outline"></ion-tab>\n</ion-tabs>\n\n'/*ion-inline-end:"/home/mihttp-27/lavozdemaria/src/pages/tabs/tabs.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/mihttp-27/lavozdemaria/src/pages/tabs/tabs.html"*/'<ion-tabs>\n  <ion-tab [root]="tab1Root" tabTitle="Noticias" tabIcon="ios-paper-outline"></ion-tab>\n<ion-tab [root]="tab2Root" tabTitle="Eventos" tabIcon="ios-calendar-outline"></ion-tab> \n  <ion-tab [root]="tab3Root" tabTitle="Donaciones" tabIcon="ios-heart-outline"></ion-tab>\n  <ion-tab [root]="tab4Root" tabTitle="Contáctanos" tabIcon="ios-navigate-outline"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/home/mihttp-27/lavozdemaria/src/pages/tabs/tabs.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], TabsPage);
@@ -178,7 +190,7 @@ var TabsPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 199:
+/***/ 200:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -219,7 +231,7 @@ var AboutPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 200:
+/***/ 201:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -276,15 +288,19 @@ var ContactPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 201:
+/***/ 202:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__news_news__ = __webpack_require__(101);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_prueba_prueba__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__news_news__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_prueba_prueba__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_toPromise__ = __webpack_require__(279);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_toPromise__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -294,6 +310,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
+
 
 
 
@@ -328,7 +346,7 @@ var HomePage = /** @class */ (function () {
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/home/mihttp-27/lavozdemaria/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Radio La Voz de María &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<ion-icon name="chatbubbles" onclick="window.open(\'https://tawk.to/chat/5acd28c14b401e45400e84a1/default/?$_tawk_popout=true\', \'_system\', \'location=yes\');"> </ion-icon> </ion-title>\n       <link href="home.scss">\n        <link href="home.ts">\n  </ion-navbar>\n</ion-header>\n<ion-content>\n  <img src="i../../assets/imgs/home.png">\n \n    <div class="radio">\n        <div class="logo">  \n        <table cellpadding="2" cellspacing="0" border="0" align="center" style="padding-left:1em;"><tr><td align="center"><audio id="audio_2" controls preload="none" style="width:16em;padding:0;"><source src="http://72.52.144.7:8011/stream/2/;?type=http&amp;nocache=5" type=\'audio/mpeg\'></audio></td></tr></table><script type="text/javascript">\n\n    function $(id){return document.getElementById(id);}\n    var registerOnWindowLoad=function(callback){\n\n    if(window.addEventListener){\n        window.addEventListener(\'load\',callback,false);\n\n    }else{\n\n    window.attachEvent(\'onload\',callback);\n\n    }\n\n    };\n\n    registerOnWindowLoad(function(){\n\n    if(navigator.userAgent.match(/msie|trident/i)){\n\n    $(\'hdrbox\').style.display = \'block\';\n\n    }\n\n    });\n\n    </script><script type="text/javascript">\n\n    var registerOnWindowLoad=function(callback){\n\n    if(window.addEventListener){\n\n    window.addEventListener(\'load\',callback,false);\n\n    }else{\n\n    window.attachEvent(\'onload\',callback);\n\n    }\n\n    };\n\n    registerOnWindowLoad(function(){\n\n    var audio=document.getElementsByTagName("audio");\n\n    if(audio.length){\n\n    var canPlay = !!audio[0].canPlayType && audio[0].canPlayType(\'audio/mpeg; codecs="mp3"\') != "";\n\n    if(!canPlay){\n\n    for(var i=audio.length-1;i>=0;i--){\n\n    var parent = audio[i].parentNode;\n\n    parent.removeChild(audio[i]);\n\n    var parent2 = parent.parentNode;\n\n    parent2.removeChild(parent);\n\n    }\n\n    }\n\n    }\n\n    });\n\n    </script>\n    </div> \n</div>\n    \n     <ion-refresher (ionRefresh)="doRefresh($event)">\n    <ion-refresher-content></ion-refresher-content>\n  </ion-refresher>\n     <h4 align="center"> Últimas noticias</h4>\n    \n    \n   <ion-list>\n        <ion-item *ngFor="let article of news"> \n            <ion-thumbnail item-start>\n                <img [src]="article.images.image_intro">\n                <div> \n                \n                </div>\n            </ion-thumbnail>\n            <h2>{{article.title}}   </h2>\n            <p>{{ article.published_date }}</p>\n            <button ion-button (click)="showNewsPage(article)" clear item-end>Ver</button>\n            </ion-item>\n    </ion-list>\n    \n    <footer>\n    <div class="container-vermas">\n     <a class="vermas" href=""> Ver más </a>\n        <div class="icon-vermas">\n      <ion-icon name="ios-arrow-down"></ion-icon>\n             </div> \n    </div>\n    </footer>\n</ion-content>\n'/*ion-inline-end:"/home/mihttp-27/lavozdemaria/src/pages/home/home.html"*/,
+            selector: 'page-home',template:/*ion-inline-start:"/home/mihttp-27/lavozdemaria/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Radio La Voz de María &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<ion-icon name="chatbubbles" onclick="window.open(\'https://tawk.to/chat/5acd28c14b401e45400e84a1/default/?$_tawk_popout=true\', \'_system\', \'location=yes\');"> </ion-icon> </ion-title>     \n       <link href="home.scss">\n        <link href="home.ts">\n  </ion-navbar>\n</ion-header>\n<ion-content>\n  <img src="i../../assets/imgs/home.png">\n \n    <div class="radio">\n        <div class="logo">  \n        <table cellpadding="2" cellspacing="0" border="0" align="center" style="padding-left:1em;"><tr><td align="center"><audio id="audio_2" controls preload="none" style="width:16em;padding:0;"><source src="http://72.52.144.7:8011/stream/2/;?type=http&amp;nocache=5" type=\'audio/mpeg\'></audio></td></tr></table><script type="text/javascript">\n\n    function $(id){return document.getElementById(id);}\n    var registerOnWindowLoad=function(callback){\n\n    if(window.addEventListener){\n        window.addEventListener(\'load\',callback,false);\n\n    }else{\n\n    window.attachEvent(\'onload\',callback);\n\n    }\n\n    };\n\n    registerOnWindowLoad(function(){\n\n    if(navigator.userAgent.match(/msie|trident/i)){\n\n    $(\'hdrbox\').style.display = \'block\';\n\n    }\n\n    });\n\n    </script><script type="text/javascript">\n\n    var registerOnWindowLoad=function(callback){\n\n    if(window.addEventListener){\n\n    window.addEventListener(\'load\',callback,false);\n\n    }else{\n\n    window.attachEvent(\'onload\',callback);\n\n    }\n\n    };\n\n    registerOnWindowLoad(function(){\n\n    var audio=document.getElementsByTagName("audio");\n\n    if(audio.length){\n\n    var canPlay = !!audio[0].canPlayType && audio[0].canPlayType(\'audio/mpeg; codecs="mp3"\') != "";\n\n    if(!canPlay){\n\n    for(var i=audio.length-1;i>=0;i--){\n\n    var parent = audio[i].parentNode;\n\n    parent.removeChild(audio[i]);\n\n    var parent2 = parent.parentNode;\n\n    parent2.removeChild(parent);\n\n    }\n\n    }\n\n    }\n\n    });\n\n    </script>\n    </div> \n</div>\n    \n     <ion-refresher (ionRefresh)="doRefresh($event)">\n    <ion-refresher-content></ion-refresher-content>\n  </ion-refresher>\n     <h4 align="center"> Últimas noticias</h4>\n   <ion-list>\n\n\n    <ion-item *ngFor="let article of news"> \n    \n    <ion-thumbnail item-start *ngIf="article.images.image_intro">\n      <img [src]="article.images.image_intro"> \n         \n    </ion-thumbnail>\n    <h2>{{article.title}}   </h2>\n    <p> {{article.metadesc}}</p>\n    <button ion-button (click)="showNewsPage(article)" clear item-end>Ver</button>\n      \n  </ion-item>\n      \n    \n        \n</ion-list>\n\n\n    <footer>\n    <div class="container-vermas">\n     <a class="vermas" href=""> Ver más </a>\n        <div class="icon-vermas">\n      <ion-icon name="ios-arrow-down"></ion-icon>\n             </div> \n    </div>\n    </footer>\n</ion-content>\n'/*ion-inline-end:"/home/mihttp-27/lavozdemaria/src/pages/home/home.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_3__providers_prueba_prueba__["a" /* PruebaProvider */]])
     ], HomePage);
@@ -339,14 +357,14 @@ var HomePage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 202:
+/***/ 203:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PruebaProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_http__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_http__ = __webpack_require__(204);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(277);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(205);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -401,13 +419,13 @@ var PruebaProvider = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 205:
+/***/ 207:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(206);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(226);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(208);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(228);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -415,7 +433,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 226:
+/***/ 228:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -423,25 +441,27 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(268);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common_http__ = __webpack_require__(204);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_http__ = __webpack_require__(203);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_about_about__ = __webpack_require__(199);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_contact_contact__ = __webpack_require__(200);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_home_home__ = __webpack_require__(201);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_tabs_tabs__ = __webpack_require__(198);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_events_events__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_news_news__ = __webpack_require__(101);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ionic_native_status_bar__ = __webpack_require__(194);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ionic_native_splash_screen__ = __webpack_require__(197);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__providers_remote_service_remote_service__ = __webpack_require__(283);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__providers_prueba_prueba__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(278);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common_http__ = __webpack_require__(206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_http__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_about_about__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_contact_contact__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_home_home__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_tabs_tabs__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_events_events__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_news_news__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ionic_native_status_bar__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ionic_native_splash_screen__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__providers_remote_service_remote_service__ = __webpack_require__(285);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__providers_prueba_prueba__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__ionic_native_social_sharing__ = __webpack_require__(156);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -496,6 +516,7 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_12__ionic_native_status_bar__["a" /* StatusBar */],
                 __WEBPACK_IMPORTED_MODULE_13__ionic_native_splash_screen__["a" /* SplashScreen */],
                 __WEBPACK_IMPORTED_MODULE_14__providers_remote_service_remote_service__["a" /* RemoteServiceProvider */],
+                __WEBPACK_IMPORTED_MODULE_16__ionic_native_social_sharing__["a" /* SocialSharing */],
                 __WEBPACK_IMPORTED_MODULE_15__providers_prueba_prueba__["a" /* PruebaProvider */],
                 { provide: __WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["b" /* IonicErrorHandler */] }
             ]
@@ -508,16 +529,16 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 268:
+/***/ 278:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(194);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(197);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_tabs_tabs__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_tabs_tabs__ = __webpack_require__(199);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -543,7 +564,7 @@ var MyApp = /** @class */ (function () {
         });
     }
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/mihttp-27/lavozdemaria/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n\n\n'/*ion-inline-end:"/home/mihttp-27/lavozdemaria/src/app/app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/mihttp-27/lavozdemaria/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n\n<<<<<<< HEAD\n=======\n   \n>>>>>>> andrea\n\n'/*ion-inline-end:"/home/mihttp-27/lavozdemaria/src/app/app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);
@@ -554,12 +575,12 @@ var MyApp = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 283:
+/***/ 285:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RemoteServiceProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(206);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -594,5 +615,5 @@ var RemoteServiceProvider = /** @class */ (function () {
 
 /***/ })
 
-},[205]);
+},[207]);
 //# sourceMappingURL=main.js.map

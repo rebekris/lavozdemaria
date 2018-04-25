@@ -80,6 +80,10 @@
         "source": "/home/mihttp-27/lavozdemaria/platforms/android/app/src/main/res/drawable-port-mdpi/screen.png"
     },
     {
+        "merged": "/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/res/merged/debug/xml_sharing_paths.xml.flat",
+        "source": "/home/mihttp-27/lavozdemaria/platforms/android/app/src/main/res/xml/sharing_paths.xml"
+    },
+    {
         "merged": "/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/res/merged/debug/drawable-land-ldpi_screen.png.flat",
         "source": "/home/mihttp-27/lavozdemaria/platforms/android/app/src/main/res/drawable-land-ldpi/screen.png"
     },

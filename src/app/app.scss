@@ -41,34 +41,23 @@ h1, h3, h4,h5{
 .ion-ios-navigate-outline:before{
     color: white;
     }
-
- a.vermas {
+    
+ .container-vermas {
     position: relative;
-    text-align: center;
-    margin-left: 32%;
     color: #D08E00;
+    text-align: center;
+}
+
+a.vermas {
+
+    position: relative;
+    padding: 10px 35px;
+    border: 1px solid #d08e00;
+    line-height: 47px;
+    margin: 0;
+    color:  #D08E00;
     text-decoration: none;
-     
-    }
-
- .container-vermas{
-     background-color: transparent;
-     position: relative;
-     width: 40%;
-     left: 30%;
-     bottom: 3%;
-     border-style:solid;
-     padding: 2%;
-     border-width: thin;
-     border-color: #D08E00;
-     color: #D08E00;
-    }
-    
-    
-   .icon-vermas {
-     margin-left: 45%;
-     }
-
+}
 
 .button-clear-ios {
     border-color: transparent;
