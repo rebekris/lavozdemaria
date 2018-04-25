@@ -25756,6 +25756,10 @@ page-about .text-black {
   padding: 5%;
 }
 
+page-about .paypal-button img {
+  width: 20%;
+}
+
 page-contact .dos, page-contact .tres, page-contact .cuatro {
   margin-top: 3%;
 }
