@@ -20,7 +20,6 @@ import { RemoteServiceProvider } from '../providers/remote-service/remote-servic
 import { PruebaProvider } from '../providers/prueba/prueba';
 
 
-
 @NgModule({
   declarations: [
     MyApp,

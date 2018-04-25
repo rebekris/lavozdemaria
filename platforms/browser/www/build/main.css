@@ -25827,6 +25827,10 @@ page-contact .imagen {
   margin-bottom: 10%;
 }
 
+page-contact #map {
+  height: 50%;
+}
+
 page-home .radio {
   background-color: #E9E8E7;
   position: relative;
