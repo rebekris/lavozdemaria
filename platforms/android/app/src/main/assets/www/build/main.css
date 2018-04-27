@@ -25756,6 +25756,10 @@ page-about .text-black {
   padding: 5%;
 }
 
+page-about .paypal-button img {
+  width: 20%;
+}
+
 page-contact .dos, page-contact .tres, page-contact .cuatro {
   margin-top: 3%;
 }
@@ -25817,16 +25821,25 @@ page-contact #map {
   height: 50%;
 }
 
+page-events h2 {
+  color: #991B1A;
+  padding: 1%;
+  text-transform: uppercase;
+  text-shadow: 2px;
+}
+
+page-events p {
+  padding-left: 1%;
+}
+
 page-home .radio {
   background-color: #E9E8E7;
   position: relative;
   width: 85%;
   left: 7%;
   bottom: 7%;
-  border-style: solid;
-  border-width: thin;
-  border-color: #D08E00;
-  background-color: white;
+  border: 1px solid #D08E00;
+  background-color: #fafafa;
   overflow: hidden;
 }
 
@@ -25852,8 +25865,11 @@ page-home .logo {
   background-size: 80%;
 }
 
-page-home audio {
-  margin-left: 60px;
+page-home #audio_2 {
+  margin-left: 15% !important;
+  left: 7%;
+  position: relative;
+  overflow: hidden;
 }
 
 page-news .text-container {

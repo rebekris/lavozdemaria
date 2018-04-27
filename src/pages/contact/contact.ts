@@ -20,7 +20,7 @@ export class ContactPage {
   }
   
   showMap(){
-    const location= new google.maps.LatLng(-2.142953, -79.895051);
+    const location= new google.maps.LatLng(-2.1824565,-79.8930946);
   
     const options= {
         center: location,
