@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/transforms/desugar/release/7.jar"
+        jumboMode="false"
+        min-sdk-version="19"
+        optimize="true"
+        revision="27.0.3"
+        sha1="1ee5c2f406760f06473e531db22e27d1fe79de03">
+        <dex dex="/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/transforms/preDex/release/7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/transforms/desugar/release/3.jar"
+        jumboMode="false"
+        min-sdk-version="19"
+        optimize="true"
+        revision="27.0.3"
+        sha1="5e0b1687b248807ae14686d1b88133f431c3c529">
+        <dex dex="/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/transforms/preDex/release/3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/transforms/desugar/release/2.jar"
+        jumboMode="false"
+        min-sdk-version="19"
+        optimize="true"
+        revision="27.0.3"
+        sha1="68ae47319190a91d4ed15a2734e2ed60ace9f01c">
+        <dex dex="/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/transforms/preDex/release/2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/transforms/desugar/release/5.jar"
+        jumboMode="false"
+        min-sdk-version="19"
+        optimize="true"
+        revision="27.0.3"
+        sha1="d4b7ba177ae64e26c19e00a0a01a5b189945058b">
+        <dex dex="/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/transforms/preDex/release/5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/transforms/desugar/release/4.jar"
+        jumboMode="false"
+        min-sdk-version="19"
+        optimize="true"
+        revision="27.0.3"
+        sha1="93acc435589510381cd34f3513e5910a2f92fe5d">
+        <dex dex="/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/transforms/preDex/release/4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/transforms/desugar/release/6.jar"
+        jumboMode="false"
+        min-sdk-version="19"
+        optimize="true"
+        revision="27.0.3"
+        sha1="961642af7e57bc18ae57ae1d7aafca513633fe9e">
+        <dex dex="/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/transforms/preDex/release/6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/transforms/desugar/release/9.jar"
+        jumboMode="false"
+        min-sdk-version="19"
+        optimize="true"
+        revision="27.0.3"
+        sha1="97effbf88e99ef109473d7b35adae267817b0759">
+        <dex dex="/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/transforms/preDex/release/9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/transforms/desugar/release/0.jar"
+        jumboMode="false"
+        min-sdk-version="19"
+        optimize="true"
+        revision="27.0.3"
+        sha1="3e41042ea2161e7c6e1b72eba111a87552bb7cd4">
+        <dex dex="/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/transforms/preDex/release/1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/transforms/desugar/release/8.jar"
+        jumboMode="false"
+        min-sdk-version="19"
+        optimize="true"
+        revision="27.0.3"
+        sha1="6785164694a22294a2f9fb0ff5ddad0e224c7ba0">
+        <dex dex="/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/transforms/preDex/release/8.jar" />
+    </item>
+
+</items>
