@@ -25821,6 +25821,17 @@ page-contact #map {
   height: 50%;
 }
 
+page-contact .dev {
+  text-align: center;
+}
+
+page-contact .dev p {
+  padding: 0;
+  font-size: 13px;
+  margin-bottom: 0;
+  line-height: 3px;
+}
+
 page-events h2 {
   color: #991B1A;
   padding: 1%;
@@ -25833,7 +25844,6 @@ page-events p {
 }
 
 page-home .radio {
-  background-color: #E9E8E7;
   position: relative;
   width: 85%;
   left: 7%;

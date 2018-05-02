@@ -1,4 +1,4 @@
-webpackJsonp([3],{
+webpackJsonp([2],{
 
 /***/ 101:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -120,14 +120,10 @@ webpackEmptyAsyncContext.id = 114;
 var map = {
 	"../pages/events/events.module": [
 		286,
-		2
+		1
 	],
 	"../pages/news/news.module": [
 		287,
-		1
-	],
-	"../pages/test/test.module": [
-		288,
 		0
 	]
 };
@@ -179,7 +175,7 @@ var TabsPage = /** @class */ (function () {
         this.tab4Root = __WEBPACK_IMPORTED_MODULE_2__contact_contact__["a" /* ContactPage */];
     }
     TabsPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/mihttp-27/lavozdemaria/src/pages/tabs/tabs.html"*/'<ion-tabs>\n  <ion-tab [root]="tab1Root" tabTitle="Noticias" tabIcon="ios-paper-outline"></ion-tab>\n<ion-tab [root]="tab2Root" tabTitle="Programación" tabIcon="ios-calendar-outline"></ion-tab> \n  <ion-tab [root]="tab3Root" tabTitle="Aportaciones" tabIcon="ios-heart-outline"></ion-tab>\n  <ion-tab [root]="tab4Root" tabTitle="Contáctanos" tabIcon="ios-navigate-outline"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/home/mihttp-27/lavozdemaria/src/pages/tabs/tabs.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/mihttp-27/lavozdemaria/src/pages/tabs/tabs.html"*/'<ion-tabs>\n  <ion-tab [root]="tab1Root" tabTitle="Inicio" tabIcon="ios-paper-outline"></ion-tab>\n<ion-tab [root]="tab2Root" tabTitle="Programación" tabIcon="ios-calendar-outline"></ion-tab> \n  <ion-tab [root]="tab3Root" tabTitle="Aportación" tabIcon="ios-heart-outline"></ion-tab>\n  <ion-tab [root]="tab4Root" tabTitle="Contáctanos" tabIcon="ios-navigate-outline"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/home/mihttp-27/lavozdemaria/src/pages/tabs/tabs.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], TabsPage);
@@ -277,7 +273,7 @@ var ContactPage = /** @class */ (function () {
     ], ContactPage.prototype, "mapRef", void 0);
     ContactPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-contact',template:/*ion-inline-start:"/home/mihttp-27/lavozdemaria/src/pages/contact/contact.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Contacto<ion-icon float-right name="chatbubbles" onclick="window.open(\'https://tawk.to/chat/5acd28c14b401e45400e84a1/default/?$_tawk_popout=true\', \'_system\', \'location=yes\');"> </ion-icon> <ion-icon float-right margin-right name="call" onclick="window.open(\'tel:042598860\')" ></ion-icon>\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>   \n    <div #map id="map">  </div>\n  <ion-list>\n      <!--\n      <div class="imagen">\n          <img class="map" src="i../../assets/imgs/new.png" >\n      </div> -->\n            \n      <ion-item>\n        <div class="uno">\n            <h2 ion-title> Dirección </h2>\n            <p ion-text> Cdla. Bolivariana Mz. A Villa 9. <br> <br> Calle Andrés Bello y Av. del Libertador </p>\n        </div>\n        <div class="dos">\n            <h2 ion-title> Teléfono </h2>\n            <p ion-text> +593(04)2598860 - 2598870 </p>\n        </div>\n        <div class="tres">\n            <h2 ion-title> Horario de atención </h2>\n            <p ion-text> 09h00 a 18h00 </p>\n        </div>\n        <div class="cuatro">\n            <h2 ion-title> E-mail </h2>\n            <p ion-text> administracion@lavozdemaria.ec </p> \n        </div>\n      </ion-item>\n      \n  </ion-list>\n    \n</ion-content>'/*ion-inline-end:"/home/mihttp-27/lavozdemaria/src/pages/contact/contact.html"*/
+            selector: 'page-contact',template:/*ion-inline-start:"/home/mihttp-27/lavozdemaria/src/pages/contact/contact.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Contacto<ion-icon float-right name="chatbubbles" onclick="window.open(\'https://tawk.to/chat/5acd28c14b401e45400e84a1/default/?$_tawk_popout=true\', \'_system\', \'location=yes\');"> </ion-icon> <ion-icon float-right margin-right name="call" onclick="window.open(\'tel:042598860\')" ></ion-icon>\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>   \n    <div #map id="map">  </div>\n  <ion-list>\n      <!--\n      <div class="imagen">\n          <img class="map" src="i../../assets/imgs/new.png" >\n      </div> -->\n            \n      <ion-item>\n        <div class="uno">\n            <h2 ion-title> Dirección </h2>\n            <p ion-text> Cdla. Bolivariana Mz. A Villa 9. <br> <br> Calle Andrés Bello y Av. del Libertador </p>\n        </div>\n        <div class="dos">\n            <h2 ion-title> Teléfono </h2>\n            <p ion-text> +593(04)2598860  +593(04)2598870 </p>\n        </div>\n        <div class="tres">\n            <h2 ion-title> Horario de atención </h2>\n            <p ion-text> 09h00 a 18h00 </p>\n        </div>\n        <div class="cuatro">\n            <h2 ion-title> E-mail </h2>\n            <p ion-text> administracion@lavozdemaria.ec </p> \n        </div>\n      </ion-item>\n      \n  </ion-list>\n    \n</ion-content>'/*ion-inline-end:"/home/mihttp-27/lavozdemaria/src/pages/contact/contact.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
     ], ContactPage);
@@ -497,8 +493,7 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */], {}, {
                     links: [
                         { loadChildren: '../pages/events/events.module#EventsPageModule', name: 'EventsPage', segment: 'events', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/news/news.module#NewsPageModule', name: 'NewsPage', segment: 'news', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/test/test.module#TestPageModule', name: 'TestPage', segment: 'test', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/news/news.module#NewsPageModule', name: 'NewsPage', segment: 'news', priority: 'low', defaultHistory: [] }
                     ]
                 })
             ],
