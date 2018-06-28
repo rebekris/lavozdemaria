@@ -1,7 +1,8 @@
 h1, h3, h4,h5{ 
     color:#991B1A;
     padding:1%;
-     }      
+}      
+p{font-size: 14px; line-height: 24px;}
 
 
 .tabbar, .toolbar-background {
@@ -26,19 +27,7 @@ h1, h3, h4,h5{
     font-size: 8px !important;
     }
 
-.ion-ios-paper-outline:before{
-    color: white;
-    }
-
-.ion-ios-calendar-outline:before{
-    color: white;
-    }
-
-.ion-ios-heart-outline:before{
-    color: white;
-    }
-
-.ion-ios-navigate-outline:before{
+.ion-ios-paper-outline:before, .ion-ios-calendar-outline:before, .ion-ios-heart-outline:before, .ion-ios-navigate-outline:before{
     color: white;
     }
     

@@ -21,21 +21,14 @@ export class HomePage {
     doRefresh(refresher){
        setTimeout(() => {
          console.log('Async operation has ended');
+         this.getdata();
          refresher.complete();
        }, 2000);
     }
+
     
-    showNewsPage(article){
-        this.navCtrl.push(
-            NewsPage,
-            {
-                art : article
-            }
-            );    
-    }
-    
-      ionViewDidEnter(){
-        this.provider.getArticles().subscribe(
+    getdata(){
+      this.provider.getArticles().subscribe(
         result=>{
             this.news= result.articles;
             console.log("Texto: " + this.news + "...");
@@ -49,6 +42,19 @@ export class HomePage {
                   console.log("WELL DONE!");
             },  
         );
+    }
+    
+    showNewsPage(article){
+        this.navCtrl.push(
+            NewsPage,
+            {
+                art : article
+            }
+            );    
+    }
+    
+      ionViewDidEnter(){
+        this.getdata();
     }
 
     

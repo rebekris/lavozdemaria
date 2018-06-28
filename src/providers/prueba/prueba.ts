@@ -35,7 +35,7 @@ export class PruebaProvider {
 
   getArticles()
   {
-    let url = "https://mihttp.net/demo/lavozdemaria/end/get/content/tagarticles?tagid=2";
+    let url = "https://lavozdemaria.ec/end/get/content/tagarticles?tagid=2";
     let res=this.http.get(url).map(
       res => res.json()
     );

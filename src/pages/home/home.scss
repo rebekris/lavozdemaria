@@ -1,13 +1,20 @@
 page-home {
 
  .radio {
+     background-color: #f2f3f4;
      position: relative;
-     width: 85%;
-     left: 7%;
+     width: 90%;
+     left: 5%;
      bottom: 7%;
-     border: 1px solid #D08E00 ;
-     background-color: #fafafa;
+     border:1px solid #D08E00;
      overflow: hidden;
+     .radio-tmp{
+        margin: 0;
+        display: table;
+        float: left;
+        margin-top: 10px;
+    
+     }
      
      }
 
@@ -26,20 +33,12 @@ page-home {
     
     .logo {
         width: 20%;
-        left: 40%;
-        padding: 5%;
-        background-image: url(../assets/imgs/logo-maria.png) !important;
-        background-repeat:no-repeat;
-        background-position: center;
-        background-size: 80%;
+        padding: 10%;
+        background: url(../assets/imgs/logo-maria.png) no-repeat center center !important;
+        background-size: contain;
+        float: left;
+        margin-left: 5px;
     }
-    
-   #audio_2 {
-       margin-left: 15% !important;
-       left: 7%;
-       position: relative;
-       overflow: hidden;
-       }
     
    
     

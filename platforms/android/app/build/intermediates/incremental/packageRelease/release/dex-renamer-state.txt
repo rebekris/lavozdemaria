@@ -1,4 +1,4 @@
-#Wed May 02 17:19:48 ECT 2018
+#Tue Jun 19 13:06:53 ECT 2018
 base.0=/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/transforms/dex/release/0
 renamed.0=classes.dex
 file.0=/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/transforms/dex/release/0/classes.dex

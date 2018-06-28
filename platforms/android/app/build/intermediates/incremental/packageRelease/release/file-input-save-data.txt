@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed May 02 17:19:48 ECT 2018
+#Tue Jun 19 13:06:54 ECT 2018
 122.file=/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/transforms/stripDebugSymbol/release/0/lib/arm64-v8a/libcardioRecognizer.so
 60.set=ANDROID_RESOURCE
 129.file=/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/assets/release/www/plugins/cordova-plugin-file/www/FileReader.js
@@ -73,7 +73,7 @@
 82.file=/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/assets/release/www/assets/fonts/noto-sans-regular.woff
 92.base=/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/assets/release
 8.base=/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/assets/release
-173.set=ASSET
+173.set=ANDROID_RESOURCE
 89.file=/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/assets/release/www/assets/imgs/Programacion/PROGRAMAS-LVM10.jpg
 99.base=/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/res/release/resources-release.ap_
 121.file=/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/assets/release/www/plugins/cordova-plugin-x-socialsharing/www/SocialSharing.js
@@ -108,7 +108,7 @@
 136.set=ASSET
 68.base=/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/assets/release
 128.set=ANDROID_RESOURCE
-172.set=ANDROID_RESOURCE
+172.set=ASSET
 112.base=/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/assets/release
 11.file=/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/assets/release/www/plugins/cordova-plugin-advanced-http/www/messages.js
 21.base=/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/assets/release
@@ -182,7 +182,7 @@
 50.file=/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable-land-xxhdpi-v4/screen.png
 134.set=ASSET
 158.base=/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/assets/release
-57.file=/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable-hdpi-v4/ic_action_previous_item.png
+57.file=/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable-xhdpi-v4/ic_action_next_item.png
 126.set=ASSET
 67.base=/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/assets/release
 118.set=ANDROID_RESOURCE
@@ -234,7 +234,7 @@
 30.set=ANDROID_RESOURCE
 126.file=/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/assets/release/www/plugins/cordova-plugin-file/www/FileEntry.js
 22.set=ASSET
-173.file=/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/assets/release/www/assets/imgs/lavozdemaria.png
+173.file=/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable-port-xxxhdpi-v4/screen.png
 141.base=/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/assets/release
 50.base=/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/res/release/resources-release.ap_
 14.set=ANDROID_RESOURCE
@@ -258,7 +258,7 @@
 124.set=NATIVE_RESOURCE
 19.base=/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/assets/release
 157.base=/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/transforms/stripDebugSymbol/release/0
-56.file=/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable-xhdpi-v4/ic_action_next_item.png
+56.file=/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable-hdpi-v4/ic_action_previous_item.png
 116.set=ASSET
 66.base=/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/assets/release
 108.set=ASSET
@@ -288,7 +288,7 @@
 126.base=/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/assets/release
 25.file=/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/transforms/stripDebugSymbol/release/0/lib/mips/libcardioDecider.so
 163.file=/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/assets/release/www/cordova-js-src/android/nativeapiprovider.js
-173.base=/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/assets/release
+173.base=/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/res/release/resources-release.ap_
 2.set=ASSET
 72.file=/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/transforms/stripDebugSymbol/release/0/lib/x86/libcardioDecider.so
 131.set=ASSET
@@ -308,7 +308,7 @@
 20.set=NATIVE_RESOURCE
 125.file=/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/assets/release/www/plugins/cordova-plugin-splashscreen/www/splashscreen.js
 12.set=ASSET
-172.file=/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable-port-xxxhdpi-v4/screen.png
+172.file=/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/assets/release/www/assets/imgs/lavozdemaria.png
 140.base=/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/assets/release
 90.set=ASSET
 82.set=ASSET
@@ -364,7 +364,7 @@ count=175
 24.file=/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/assets/release/www/plugins/cordova-plugin-file/www/ProgressEvent.js
 0.set=ANDROID_RESOURCE
 162.file=/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/assets/release/www/index.html
-172.base=/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+172.base=/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/assets/release
 71.file=/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable-hdpi-v4/ic_action_remove.png
 121.set=ASSET
 169.file=/home/mihttp-27/lavozdemaria/platforms/android/app/build/intermediates/transforms/stripDebugSymbol/release/0/lib/x86_64/libcardioRecognizer.so

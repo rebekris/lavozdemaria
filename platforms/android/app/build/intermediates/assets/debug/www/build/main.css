@@ -25683,6 +25683,11 @@ h1, h3, h4, h5 {
   padding: 1%;
 }
 
+p {
+  font-size: 14px;
+  line-height: 24px;
+}
+
 .tabbar, .toolbar-background {
   background-image: url(../assets/imgs/bg-tabs.jpg) !important;
   background-repeat: repeat-x !important;
@@ -25704,19 +25709,7 @@ h1, h3, h4, h5 {
   font-size: 8px !important;
 }
 
-.ion-ios-paper-outline:before {
-  color: white;
-}
-
-.ion-ios-calendar-outline:before {
-  color: white;
-}
-
-.ion-ios-heart-outline:before {
-  color: white;
-}
-
-.ion-ios-navigate-outline:before {
+.ion-ios-paper-outline:before, .ion-ios-calendar-outline:before, .ion-ios-heart-outline:before, .ion-ios-navigate-outline:before {
   color: white;
 }
 
@@ -25743,12 +25736,23 @@ a.vermas {
   text-transform: uppercase;
 }
 
+page-about .aportacion {
+  border: 1px solid #981719;
+  display: table;
+  vertical-align: middle;
+  padding: 10px 15px;
+  color: #981719;
+  font-weight: bold;
+  margin: 0 auto;
+  text-indent: 10px;
+  text-transform: uppercase;
+}
+
 page-about .text-container {
   padding: 20px;
-  text-align: justify;
+  text-align: center;
   font-family: "Roboto";
-  font-size: 14px;
-  margin-top: 15%;
+  margin-top: 5%;
 }
 
 page-about .text-black {
@@ -25821,6 +25825,17 @@ page-contact #map {
   height: 50%;
 }
 
+page-contact .dev {
+  text-align: center;
+}
+
+page-contact .dev p {
+  padding: 0;
+  font-size: 13px;
+  margin-bottom: 0;
+  line-height: 3px;
+}
+
 page-events h2 {
   color: #991B1A;
   padding: 1%;
@@ -25833,13 +25848,20 @@ page-events p {
 }
 
 page-home .radio {
+  background-color: #f2f3f4;
   position: relative;
-  width: 85%;
-  left: 7%;
+  width: 90%;
+  left: 5%;
   bottom: 7%;
   border: 1px solid #D08E00;
-  background-color: #fafafa;
   overflow: hidden;
+}
+
+page-home .radio .radio-tmp {
+  margin: 0;
+  display: table;
+  float: left;
+  margin-top: 10px;
 }
 
 page-home .icon-vermas {
@@ -25856,19 +25878,11 @@ page-home .button-clear-md {
 
 page-home .logo {
   width: 20%;
-  left: 40%;
-  padding: 5%;
-  background-image: url(../assets/imgs/logo-maria.png) !important;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 80%;
-}
-
-page-home #audio_2 {
-  margin-left: 15% !important;
-  left: 7%;
-  position: relative;
-  overflow: hidden;
+  padding: 10%;
+  background: url(../assets/imgs/logo-maria.png) no-repeat center center !important;
+  background-size: contain;
+  float: left;
+  margin-left: 5px;
 }
 
 page-news .text-container {

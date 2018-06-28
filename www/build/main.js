@@ -216,7 +216,7 @@ var AboutPage = /** @class */ (function () {
     };
     AboutPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-about',template:/*ion-inline-start:"/home/mihttp-27/lavozdemaria/src/pages/about/about.html"*/'/APORTACIONES/\n\n<ion-header>\n  <ion-navbar>\n    <ion-title>\n     Aportaciones<ion-icon float-right name="chatbubbles" onclick="window.open(\'https://tawk.to/chat/5acd28c14b401e45400e84a1/default/?$_tawk_popout=true\', \'_system\', \'location=yes\');"> </ion-icon> <ion-icon float-right margin-right name="call" onclick="window.open(\'tel:042598860\')" ></ion-icon>\n    </ion-title>\n     \n      \n      \n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n\n     <ion-refresher (ionRefresh)="doRefresh($event)">\n        <ion-refresher-content> </ion-refresher-content>\n    </ion-refresher>\n    \n    \n    \n    \n    <div class="text-container">\n    <p>    \n    En Radio la Voz de María trabajamos para que el mensaje de nuestro Señor Jesucristo llegue a cada rincón del país.\n        Para poder lograrlo necesitamos de tu ayuda, crezcamos junto y cumplamos con la misión que nuestr Señor Jesucristo nos dejó:  </p>\n         <div class="text-black">\n        <i><q>Ir y hacer discípulos a todas las naciones</q></i>  <br>\n                <b>  Mateo 28,19  <br> </b>   <br> \n                <b>  ¡Ayúdanos con tu aportación!  </b> \n          </div>\n     </div>\n    \n    \n    <footer>\n    <div class="container-vermas">\n     <a class="vermas" href="">Realiza tu aportación </a>\n        <div class="icon-vermas">\n      <ion-icon name="ios-arrow-down"></ion-icon>\n             </div> \n        <div class="paypal-button">\n      <a href="http://www.paypal.com"> <img src="i../../assets/imgs/paypal.png" >  </a>  \n             </div> \n        \n        \n    </div>\n    </footer>\n    \n</ion-content>\n'/*ion-inline-end:"/home/mihttp-27/lavozdemaria/src/pages/about/about.html"*/
+            selector: 'page-about',template:/*ion-inline-start:"/home/mihttp-27/lavozdemaria/src/pages/about/about.html"*/'/APORTACIONES/\n\n<ion-header>\n  <ion-navbar>\n    <ion-title>\n     Aportaciones<ion-icon float-right name="chatbubbles" onclick="window.open(\'https://tawk.to/chat/5acd28c14b401e45400e84a1/default/?$_tawk_popout=true\', \'_system\', \'location=yes\');"> </ion-icon> <ion-icon float-right margin-right name="call" onclick="window.open(\'tel:042598860\')" ></ion-icon>\n    </ion-title>\n     \n      \n      \n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n    \n    <div class="text-container">\n        <h1>Realiza tu Aportación</h1>\n    <p>En Radio la Voz de María trabajamos para que el mensaje de nuestro Señor Jesucristo llegue a cada rincón del país. Para poder lograrlo necesitamos de tu ayuda, crezcamos junto y cumplamos con la misión que nuestro Señor Jesucristo nos dejó: "Ir y hacer discipulos a todas las naciones"</p>\n         <div class="text-black">\n                <b>  Mateo 28,19 </b> <br>\n                <b>  ¡Ayúdanos con tu aportación!  </b> \n          </div>\n     </div>\n    \n    \n     <div class="aportacion" onclick="window.open(\'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=K4632PBXW4YLL\', \'_system\', \'location=yes\');">\n        Haz tu aportacion \n        <ion-icon float-right name="heart" > </ion-icon>\n         \n     </div >\n    \n</ion-content>\n'/*ion-inline-end:"/home/mihttp-27/lavozdemaria/src/pages/about/about.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
     ], AboutPage);
@@ -319,17 +319,14 @@ var HomePage = /** @class */ (function () {
         this.news = []; /*Llamar a arreglo de cualquier tipo*/
     }
     HomePage.prototype.doRefresh = function (refresher) {
+        var _this = this;
         setTimeout(function () {
             console.log('Async operation has ended');
+            _this.getdata();
             refresher.complete();
         }, 2000);
     };
-    HomePage.prototype.showNewsPage = function (article) {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__news_news__["a" /* NewsPage */], {
-            art: article
-        });
-    };
-    HomePage.prototype.ionViewDidEnter = function () {
+    HomePage.prototype.getdata = function () {
         var _this = this;
         this.provider.getArticles().subscribe(function (result) {
             _this.news = result.articles;
@@ -340,9 +337,17 @@ var HomePage = /** @class */ (function () {
             console.log("WELL DONE!");
         });
     };
+    HomePage.prototype.showNewsPage = function (article) {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__news_news__["a" /* NewsPage */], {
+            art: article
+        });
+    };
+    HomePage.prototype.ionViewDidEnter = function () {
+        this.getdata();
+    };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/home/mihttp-27/lavozdemaria/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title><img src="i../../assets/imgs/lavozdemaria.png"/> <ion-icon float-right name="chatbubbles" onclick="window.open(\'https://tawk.to/chat/5acd28c14b401e45400e84a1/default/?$_tawk_popout=true\', \'_system\', \'location=yes\');"> </ion-icon> <ion-icon float-right margin-right name="call" onclick="window.open(\'tel:042598860\')" ></ion-icon></ion-title>     \n       <link href="home.scss">\n        <link href="home.ts">\n  </ion-navbar>\n</ion-header>\n<ion-content>\n  <img src="i../../assets/imgs/home.png">\n \n    <div class="radio">\n        <div class="logo">  \n        <table cellpadding="2" cellspacing="0" border="0" align="center" style="padding-left:1em;"><tr><td align="center"><audio id="audio_2" controls preload="none" style="width:16em;padding:0;"><source src="http://72.52.144.7:8011/stream/2/;?type=http&amp;nocache=5" type=\'audio/mpeg\'></audio></td></tr></table><script type="text/javascript">\n\n    function $(id){return document.getElementById(id);}\n    var registerOnWindowLoad=function(callback){\n\n    if(window.addEventListener){\n        window.addEventListener(\'load\',callback,false);\n\n    }else{\n\n    window.attachEvent(\'onload\',callback);\n\n    }\n\n    };\n\n    registerOnWindowLoad(function(){\n\n    if(navigator.userAgent.match(/msie|trident/i)){\n\n    $(\'hdrbox\').style.display = \'block\';\n\n    }\n\n    });\n\n    </script><script type="text/javascript">\n\n    var registerOnWindowLoad=function(callback){\n\n    if(window.addEventListener){\n\n    window.addEventListener(\'load\',callback,false);\n\n    }else{\n\n    window.attachEvent(\'onload\',callback);\n\n    }\n\n    };\n\n    registerOnWindowLoad(function(){\n\n    var audio=document.getElementsByTagName("audio");\n\n    if(audio.length){\n\n    var canPlay = !!audio[0].canPlayType && audio[0].canPlayType(\'audio/mpeg; codecs="mp3"\') != "";\n\n    if(!canPlay){\n\n    for(var i=audio.length-1;i>=0;i--){\n\n    var parent = audio[i].parentNode;\n\n    parent.removeChild(audio[i]);\n\n    var parent2 = parent.parentNode;\n\n    parent2.removeChild(parent);\n\n    }\n\n    }\n\n    }\n\n    });\n\n    </script>\n    </div> \n</div>\n    \n     <ion-refresher (ionRefresh)="doRefresh($event)">\n    <ion-refresher-content></ion-refresher-content>\n  </ion-refresher>\n     <h4 align="center"> ÚLTIMAS NOTICIAS</h4>\n   <ion-list>\n\n\n    <ion-item *ngFor="let article of news" (click)="showNewsPage(article)" clear item-end> \n    \n    <ion-thumbnail item-start *ngIf="article.images.image_intro">\n      <img [src]="article.images.image_intro"> \n         \n    </ion-thumbnail>\n    <h2>{{article.title}}   </h2>\n    <p> {{article.metadesc}}</p>\n    <button ion-button (click)="showNewsPage(article)" clear item-end>Ver</button>\n      \n  </ion-item>\n      \n    \n        \n</ion-list>\n\n\n    <!--<footer>\n    <div class="container-vermas">\n     <a class="vermas" href=""> Ver más </a>\n        <div class="icon-vermas">\n      <ion-icon name="ios-arrow-down"></ion-icon>\n             </div> \n    </div>\n    </footer>-->\n    \n    \n</ion-content>\n'/*ion-inline-end:"/home/mihttp-27/lavozdemaria/src/pages/home/home.html"*/,
+            selector: 'page-home',template:/*ion-inline-start:"/home/mihttp-27/lavozdemaria/src/pages/home/home.html"*/'	<ion-header>\n  <ion-navbar>\n    <ion-title><img src="i../../assets/imgs/lavozdemaria.png"/> <ion-icon float-right name="chatbubbles" onclick="window.open(\'https://tawk.to/chat/5acd28c14b401e45400e84a1/default/?$_tawk_popout=true\', \'_system\', \'location=yes\');"> </ion-icon> <ion-icon float-right margin-right name="call" onclick="window.open(\'tel:042598860\')" ></ion-icon></ion-title>     \n       <link href="home.scss">\n        <link href="home.ts">\n  </ion-navbar>\n</ion-header>\n<ion-content>\n  <img src="i../../assets/imgs/home.png">\n	<div class="radio">\n		<div class="logo">  \n	    </div> \n			<table cellpadding="2" cellspacing="0" border="0" align="center" class="radio-tmp">\n				<tr>\n					<td align="center">\n						<audio id="audio_2" controls preload="none" style="width:16em;padding:0;">\n							<source src="http://72.52.144.7:8011/stream/" type=\'audio/mpeg\'>\n						</audio>\n					</td>\n				</tr>\n			</table>\n			<script type="text/javascript">\n			function $(id){return document.getElementById(id);}\n				var registerOnWindowLoad=function(callback){\n	Available				if(window.addEventListener){window.addEventListener(\'load\',callback,false);}\n					else{window.attachEvent(\'onload\',callback);}\n				};\n				registerOnWindowLoad(function(){\n				if(navigator.userAgent.match(/msie|trident/i)){ $(\'hdrbox\').style.display = \'block\';}\n		    	});\n			</script>\n			<script type="text/javascript">\n		    	var registerOnWindowLoad=function(callback){\n				if(window.addEventListener){\n					window.addEventListener(\'load\',callback,false);\n				}else{\n					window.attachEvent(\'onload\',callback);\n				}\n			};\n			registerOnWindowLoad(function(){\n			var audio=document.getElementsByTagName("audio");\n				if(audio.length){\n					var canPlay = !!audio[0].canPlayType && audio[0].canPlayType(\'audio/mpeg; codecs="mp3"\') != "";\n					if(!canPlay){\n						for(var i=audio.length-1;i>=0;i--){\n							var parent = audio[i].parentNode;\n							parent.removeChild(audio[i]);\n							var parent2 = parent.parentNode;\n							parent2.removeChild(parent);\n						}\n					}\n				}\n		   	 });\n		    </script>\n	</div>\n \n        \n    <h4 align="center"> ÚLTIMAS NOTICIAS</h4>\n    <ion-refresher (ionRefresh)="doRefresh($event)">\n    	<ion-refresher-content></ion-refresher-content>\n  	</ion-refresher>\n   	<ion-list>\n\n\n    <ion-item *ngFor="let article of news" (click)="showNewsPage(article)" clear item-end> \n    \n    <ion-thumbnail item-start *ngIf="article.images.image_intro">\n      <img [src]="article.images.image_intro"> \n         \n    </ion-thumbnail>\n    <h2>{{article.title}}   </h2>\n    <p> {{article.metadesc}}</p>\n    <button ion-button clear item-end>Ver</button>\n      \n  </ion-item>\n      \n    \n        \n</ion-list>\n\n\n    <!--<footer>\n    <div class="container-vermas">\n     <a class="vermas" href=""> Ver más </a>\n        <div class="icon-vermas">\n      <ion-icon name="ios-arrow-down"></ion-icon>\n             </div> \n    </div>\n    </footer>-->\n    \n    \n</ion-content>\n'/*ion-inline-end:"/home/mihttp-27/lavozdemaria/src/pages/home/home.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_3__providers_prueba_prueba__["a" /* PruebaProvider */]])
     ], HomePage);
@@ -398,7 +403,7 @@ var PruebaProvider = /** @class */ (function () {
         return res;
     };
     PruebaProvider.prototype.getArticles = function () {
-        var url = "https://mihttp.net/demo/lavozdemaria/end/get/content/tagarticles?tagid=2";
+        var url = "https://lavozdemaria.ec/end/get/content/tagarticles?tagid=2";
         var res = this.http.get(url).map(function (res) { return res.json(); });
         console.log("actually url: " + url);
         console.log(res);
@@ -406,9 +411,10 @@ var PruebaProvider = /** @class */ (function () {
     };
     PruebaProvider = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_http__["b" /* Http */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_http__["b" /* Http */]) === "function" && _a || Object])
     ], PruebaProvider);
     return PruebaProvider;
+    var _a;
 }());
 
 //# sourceMappingURL=prueba.js.map
